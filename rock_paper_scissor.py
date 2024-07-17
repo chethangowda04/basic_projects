@@ -1,38 +1,34 @@
 #rock paper scissor game
 import random
 num=random.randint(0,2)
-# a = """
-# do you want play:
-# 1)yes
-# 2)no
-# """
-option="""
-1)scissor
+
+
+print("""
+1)rock
 2)paper
-3)stone
-"""
-print(option)
-choice=input("enter the choice:")
-list=['scissor','paper','stone']
+3)scissor
+""")
+choice=input("select your choice:")
+
+
+list=['scissor','paper','rock']
 type=list[num]
 print(f"computer choose {type}")
-# if choice==type:
-#     continue
-if choice=='scissor' and type=='paper':
-        print("you win")
-elif choice == 'scissor' and type== 'scissor':
+if choice=='rock' and type=='paper':
+        print("computer won")
+elif choice == 'rock' and type== 'rock':
         print("draw")
-elif choice == 'scissor' and type == 'stone':
-        print("computer win")
+elif choice == 'rock' and type == 'scissor':
+        print("you won")
 elif choice == 'paper' and type == 'paper':
         print("draw")
 elif choice == 'paper' and type == 'scissor':
-        print("computer win")
-elif choice == 'paper' and type == 'stone':
-        print("you win")
-elif choice == 'stone' and type == 'paper':
-        print("computer win")
-elif choice == 'stone' and type == 'scissor':
-        print("you win")
-elif choice == 'stone' and type == 'stone':
+        print("computer won")
+elif choice == 'paper' and type == 'rock':
+        print("you won")
+elif choice == 'scissor' and type == 'paper':
+        print("you won")
+elif choice == 'scissor' and type == 'scissor':
         print("draw")
+elif choice == 'scissor' and type == 'rock':
+        print("computer won")
