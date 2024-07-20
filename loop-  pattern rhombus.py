@@ -22,3 +22,9 @@ for r in range(6,1,-1):
     for c in range(1,r):
         print("*", end="  ")
     print()
+
+
+for x in range(-6,1):
+    for y in range(-x):
+        print(y, end =" ")
+    print(" ")
