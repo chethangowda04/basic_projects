@@ -1,21 +1,21 @@
-class ABC_comp:
-    def __init__(self, name, age, salary):
-        self.name = name
-        self.age = age
-        self.salary = salary
-    def comp_info(self):
-        print("we are product based company")
-class employee(ABC_comp):
-    def __init__(self, name, age, salary, address):
-        self.name = name
-        self.age = age
-        self.salary = salary
-        self.address = address
-    def emp_dtls(self):
-        print(self.name, self.age, self.salary, self.address)
-E1 = employee(name = "chethan", age = 23, salary = 25000, address = "bengaluru")
-E1.comp_info()
-E1.emp_dtls()
+# class ABC_comp:
+#     def __init__(self, name, age, salary):
+#         self.name = name
+#         self.age = age
+#         self.salary = salary
+#     def comp_info(self):
+#         print("we are product based company")
+# class employee(ABC_comp):
+#     def __init__(self, name, age, salary, address):
+#         self.name = name
+#         self.age = age
+#         self.salary = salary
+#         self.address = address
+#     def emp_dtls(self):
+#         print(self.name, self.age, self.salary, self.address)
+# E1 = employee(name = "chethan", age = 23, salary = 25000, address = "bengaluru")
+# E1.comp_info()
+# E1.emp_dtls()
 
 
 class Be_practical:
