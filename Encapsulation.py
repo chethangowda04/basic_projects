@@ -77,3 +77,39 @@ obj1.accessprivatemembers()
 
 
 
+
+###school Bag###
+class school_bag:
+    def __init__(self, tng1, tng2, tng3, tng4):
+        self.tng1 = tng1
+        self.tng2 = tng2
+        self._tng3 = tng3
+        self.__tng4 = tng4
+
+    def public_things(self):
+        print(f"The {self.tng1} are the most important thing in the school bag.")
+
+    def public_thing(self):
+        print(f"Along with {self.tng1}, {self.tng2} is maandatory in school.")
+
+    def _protected_thing(self):
+        print(f"In school bags {self._tng3} are bit protected as the chances of loosing {self._tng3} are very high.")
+
+    def access_protected(self):
+        self._protected_thing()
+
+    def __private_thing(self):
+        print(f"In school days the {self.__tng4} are kept private by students, as they don't wish to share their marks.")
+
+    def access_private(self):
+        self.__private_thing()
+
+
+    # def __init__(self, tng1, tng2, tng3, tng4):
+    #     school_bag.__init__
+obj = school_bag("book", "dairy", "pens", "markssheet")
+obj.public_things()
+obj.public_thing()
+obj.access_protected()
+obj.access_private()
+
