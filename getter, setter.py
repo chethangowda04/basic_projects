@@ -114,3 +114,54 @@ print(stud)
 stud.set_marks(10)
 marks_stud_got=stud.get_marks()
 print(marks_stud_got)
+
+
+
+
+property function using getter and setter
+class person:
+    def __init__(self,name):
+        self._name=name
+
+    def get_name(self):
+        print('getting name...')
+        return self._name
+    def set_name(self,value):
+        print('setting name to:',value)
+        self._name=value
+
+    def del_name(self):
+        print('deleting names...')
+        del self._name
+    name=property(get_name,set_name,del_name)
+
+p=person('david')
+print(p.name)
+p.name='rocky'
+del p.name
+
+
+###Property decorator  using getter and setter
+class person:
+    def __init__(self, name):
+        self._name = name
+
+    @property
+    def name(self):
+        print("getting name...")
+        return self._name
+
+    @name.setter
+    def name(self, value):
+        print("setting name to:", value)
+        self._name = value
+
+    @name.deleter
+    def name(self):
+        print("deleting name...")
+        del self._name
+
+p = person("David")
+print(p.name)
+p.name = "Rocky"
+del p.name
