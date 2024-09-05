@@ -118,7 +118,7 @@ print(marks_stud_got)
 
 
 
-property function using getter and setter
+###property function using getter and setter
 class person:
     def __init__(self,name):
         self._name=name
